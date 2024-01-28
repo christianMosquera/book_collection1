@@ -1,0 +1,6 @@
+<h1>Add a Book</h1>
+<%= link_to("Home", books_path)%>
+<%= form_for(@book) do |f| %>
+    <%= f.text_field(:title) %>
+    <%= f.submit("Add Book") %>
+<% end %>
